@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.jsouptest.sideslip.ResideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <ListView
+            android:layout_marginTop="100dp"
+            android:id="@+id/lv"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/dis_title"
+            android:text="头目"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sid"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <!--<WebView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/web_view"></WebView>-->
+
+</com.example.jsouptest.sideslip.ResideLayout>
